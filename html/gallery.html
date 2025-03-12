@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея HUNTER x HUNTER</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background-image: url('hunt3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery">
+    <img src="hunt4.jpg" alt="Описание изображения 1">
+    <img src="hunt5.jpg" alt="Описание изображения 2">
+    <img src="hunt2.jpg" alt="Описание изображения 3">
+    <img src="hunt6.jpg" alt="Описание изображения 4">
+    <img src="hunt2.jpg" alt="Описание изображения 5">
+    <img src="hunt.jpg" alt="Описание изображения 6">
+    <img src="hunt4.jpg" alt="Описание изображения 7">
+    <img src="hunt5.jpg" alt="Описание изображения 8">
+    <img src="hunt.jpg" alt="Описание изображения 9">
+</div>
+
+<a href="12_05.html" class="back-link">Вернуться на главную</a>
+
+</body>
+</html>
