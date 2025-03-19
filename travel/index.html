@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристическое агентство</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Общий стиль для всех секций */
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Стиль для заголовков */
+        h1, h2, h3 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        /* Блок с заголовком */
+        #header-block {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header-bg.jpg') no-repeat center/cover;
+        }
+
+        /* Блок с описанием */
+        #description-block {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('description-bg.jpg') no-repeat center/cover;
+        }
+
+        /* Блок с популярными направлениями */
+        #popular-destinations-block {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('destinations-bg.jpeg') no-repeat center/cover;
+			/* Стиль для контейнера внутри секции */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Стиль для блока с направлениями */
+.destinations {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение на маленьких экранах */
+    gap: 20px; /* Расстояние между блоками */
+    margin-top: 20px;
+}
+
+/* Адаптивность: горизонтальное расположение на больших экранах */
+@media (min-width: 768px) {
+    .destinations {
+        flex-direction: row-reverse; /* Расположение справа налево */
+        justify-content: space-between; /* Равномерное распределение */
+    }
+
+    .destination {
+        width: 30%; /* Каждое направление занимает 30% ширины */
+    }
+}
+
+/* Стиль для каждого направления */
+.destination {
+    background: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+    color: #333; /* Тёмный текст */
+    padding: 20px;
+    border-radius: 10px; /* Закруглённые углы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+        }
+
+        /* Блок с турами */
+        #tours-block {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('tours-bg.jpg') no-repeat center/cover;
+        }
+
+        /* Блок с отзывами */
+        #reviews-block {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('reviews-bg.jpg') no-repeat center/cover;
+        }
+
+        /* Галерея */
+        #gallery-block {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('gallery-bg.jpg') no-repeat center/cover;
+        }
+
+        /* Часто задаваемые вопросы */
+        #faq-block {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('faq-bg.jpg') no-repeat center/cover;
+        }
+
+        /* Контакты */
+        #contacts-block {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('contacts-bg.jpg') no-repeat center/cover;
+        }
+
+        /* Стиль для кнопок */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #8B5A2B;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #654321;
+        }
+    </style>
+</head>
+<body>
+    <!-- Блок с заголовком -->
+    <section id="header-block">
+        <div>
+            <h1>Добро пожаловать в мир путешествий!</h1>
+            <p>Большое путешествие по югу Франции</p>
+            <a href="#tours-block" class="btn">Посмотреть туры</a>
+        </div>
+    </section>
+
+    <!-- Блок с описанием -->
+    <section id="description-block">
+        <div>
+            <h2>О нас</h2>
+            <p>Что вы знаете о юго-западе Франции? Именно здесь виноградники соседствуют с фруктовыми садами, океан — с горными массивами, а в живописных деревнях на каждом шагу встречаются средневековые церкви и аббатства.</p>
+			<p>Путешествие в этот край может стать невероятным опытом и откроет вам Францию, которая не похожа на Париж или Лазурный берег, но и не лишена своего провинциального очарования.</p>
+        </div>
+    </section>
+
+	<!-- Блок с популярными направлениями -->
+<section id="popular-destinations-block">
+    <div class="container">
+        <h2>Популярные направления</h2>
+        <div class="destinations">
+            <!-- Описание Бордо -->
+            <div class="destination">
+                <h3>Бордо</h3>
+                <p>
+                    Бордо — это город вин и изысканной архитектуры, расположенный на юго-западе Франции. Здесь вы сможете 
+                    прогуляться по уютным улочкам старого города, посетить знаменитые винодельни и насладиться великолепными 
+                    видами на реку Гаронна.
+                </p>
+            </div>
+            <!-- Описание Нерьяка -->
+            <div class="destination">
+                <h3>Нерьяк</h3>
+                <p>
+                    Нерьяк — очаровательная деревушка в регионе Прованс. Она славится своими живописными пейзажами, 
+                    лавандовыми полями и традиционной французской кухней. Идеальное место для тех, кто ищет спокойствие 
+                    и единение с природой.
+                </p>
+            </div>
+            <!-- Описание Лиможа -->
+            <div class="destination">
+                <h3>Лимож</h3>
+                <p>
+                    Лимож — город искусства и истории, расположенный в центральной части Франции. Здесь вас ждут средневековые 
+                    соборы, музеи керамики и фарфора, а также уютные кафе, где можно попробовать местные деликатесы.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Блок с турами -->
+    <section id="tours-block">
+        <div>
+            <h2>Наши туры</h2>
+            <p>У нас есть туры для каждого: от романтических путешествий до приключений в дикой природе.</p>
+            <a href="#" class="btn">Подробнее</a>
+        </div>
+    </section>
+
+    <!-- Блок с отзывами -->
+    <section id="reviews-block">
+        <div>
+            <h2>Отзывы наших клиентов</h2>
+            <p>"Это было самое лучшее путешествие в моей жизни!" — Анна</p>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery-block">
+        <div>
+            <h2>Галерея</h2>
+            <p>Взгляните на наши фотографии из путешествий.</p>
+            <a href="#" class="btn">Посмотреть галерею</a>
+        </div>
+    </section>
+
+    <!-- Часто задаваемые вопросы -->
+    <section id="faq-block">
+        <div>
+            <h2>Часто задаваемые вопросы</h2>
+            <p>Как забронировать тур? Какие документы нужны для поездки?</p>
+            <a href="#" class="btn">Узнать больше</a>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts-block">
+        <div>
+            <h2>Контакты</h2>
+            <p>Телефон: +7 (XXX) XXX-XX-XX<br>Email: info@travelagency.com</p>
+        </div>
+    </section>
+</body>
+</html>
